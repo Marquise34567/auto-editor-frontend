@@ -2,6 +2,9 @@ const webpack = require('webpack');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	// provide a minimal turbopack config to avoid Turbopack/webpack conflict
+	// (keeps existing webpack customizations in place and silences build error)
+	turbopack: {},
 	// keep experimental.turbo removed (use stable Webpack for builds)
 	webpack(config, { isServer }) {
 		// prevent bundling of Node-only modules for client-side bundles
