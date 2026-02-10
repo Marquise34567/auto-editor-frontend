@@ -1,0 +1,25 @@
+node_modules/
+.next/
+out/
+dist/
+build/
+
+.env
+.env.*
+
+*.mp4
+*.mov
+*.zip
+
+backend/
+server/
+api/
+functions/
+workers/
+firebase-admin/
+supabase/
+railway/
+vercel/
+
+# exclude generated outputs
+public/outputs/
